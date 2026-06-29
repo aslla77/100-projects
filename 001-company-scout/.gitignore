@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# 로컬 전용(비밀키·로컬 메모) — 절대 커밋 금지
+CLAUDE.local.md
+*.local.md
+!CLAUDE.local.md.example
+
+# 임시/스크래치
+scratchpad/
+tmp/
+*.log
