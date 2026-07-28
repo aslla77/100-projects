@@ -24,6 +24,15 @@
 | 004 | **Islet** | 할 일을 다이나믹 아일랜드·잠금화면에 고정하고 Notion과 연동하는 iOS 생산성 앱 | 심사 제출 | [devlog](./devlog/004-islet.md) |
 | 005–100 | _예정_ | — | 계획 중 | — |
 
+## 스킬 가져다 쓰기
+
+프로젝트를 만들면서 실제로 쓰고 있는 **AI 에이전트 스킬**을 [`skills/`](./skills/)에 따로 모아 공개합니다. MIT 라이선스이니 자유롭게 복사해서 쓰세요.
+
+| 폴더 | 대상 | 내용 |
+|---|---|---|
+| [`skills/claude-code/`](./skills/claude-code/) | Claude Code | 게이트 기반 프로젝트 파이프라인 (스킬 17 · 서브에이전트 9 · 규칙 11) |
+| [`skills/codex/company-scout/`](./skills/codex/company-scout/) | OpenAI Codex | 회사 1곳을 공개 자료만으로 구조화하는 플러그인 |
+
 ## 공통 원칙 (제0지침)
 
 모든 프로젝트는 다음을 따릅니다.
