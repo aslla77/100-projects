@@ -11,11 +11,15 @@
 | 001 | company-scout | 리서치 도구 / AI 에이전트 | MVP | [보기](./001-company-scout.md) |
 | 002 | Daily Relic (하루 한 점) | iOS · Flutter · 문화유산 | App Store 출시 | [보기](./002-daily-relic.md) |
 | 003 | Weather Woof (날씨멍) | iOS · Flutter · 날씨 | 심사 제출 | [보기](./003-weather-woof.md) |
-| 004 | Islet | iOS · Swift · 생산성 | 심사 제출 | [보기](./004-islet.md) |
+| 004 | Islet | iOS · Swift · 생산성 | App Store 출시 | [보기](./004-islet.md) |
+| 005 | 무럭무럭 (Mureok) | iOS · Android · Flutter · 라이프스타일 | 심사 중 | [보기](./005-mureok.md) |
+| 007 | 스튜디오 사이트 | 웹 · 정적 사이트 | 라이브 | [보기](./007-studio-site.md) |
+
+> 006은 진행 중이라 아직 일지를 열지 않았습니다.
 
 ## 공통 제작 방식
 
-네 프로젝트 모두 같은 "프로젝트 공장" 규칙을 공유합니다.
+모든 프로젝트가 같은 "프로젝트 공장" 규칙을 공유합니다.
 
 - **게이트 기반 진행** — 각 단계(리서치·기획·레드팀·빌드·리뷰·QA·보안·릴리즈) 사이에 승인 지점을 둔다.
 - **위험도 등급(Tier 0~3)** — 로컬 실험(Tier 0)과 결제·계정이 걸린 앱(Tier 2)에 다른 무게의 절차를 적용한다. 과설계 금지.
