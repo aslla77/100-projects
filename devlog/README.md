@@ -14,8 +14,9 @@
 | 004 | Islet | iOS · Swift · 생산성 | App Store 출시 | [보기](./004-islet.md) |
 | 005 | 무럭무럭 (Mureok) | iOS · Android · Flutter · 라이프스타일 | 심사 중 | [보기](./005-mureok.md) |
 | 007 | 스튜디오 사이트 | 웹 · 정적 사이트 | 라이브 | [보기](./007-studio-site.md) |
+| 009 | Adaptive Upskill | AI 에이전트 스킬 · 학습 시스템 | 공개 (v0.3) | [보기](./009-adaptive-upskill.md) |
 
-> 006은 진행 중이라 아직 일지를 열지 않았습니다.
+> 006·008은 진행 중이라 아직 일지를 열지 않았습니다.
 
 ## 공통 제작 방식
 
