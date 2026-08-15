@@ -9,6 +9,10 @@
 |---|---|---|
 | [`claude-code/`](./claude-code/) | Claude Code | 게이트 기반 프로젝트 파이프라인 — 스킬 17개 + 서브에이전트 9개 + 규칙 11개 |
 | [`codex/company-scout/`](./codex/company-scout/) | OpenAI Codex | 회사 1곳을 공개 자료만으로 구조화하는 플러그인 |
+| [aslla77/adaptive-upskill](https://github.com/aslla77/adaptive-upskill) ↗ | Agent Skills 호환 전반 | 가르치기 전에 실력을 먼저 측정하고, 아는 건 건너뛰고 모르는 것부터 가르치는 학습 스킬 (#009) |
+
+`adaptive-upskill`만 별도 저장소에 둡니다. 갱신이 잦아서 여기 복사본을 두면 금방 갈라지기 때문입니다.
+나머지 둘은 이 폴더가 최신본입니다.
 
 ## 이 스킬들의 공통 원칙 (제0지침)
 
