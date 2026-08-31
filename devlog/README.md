@@ -9,15 +9,15 @@
 | # | 프로젝트 | 분야 | 상태 | 일지 |
 |---|---|---|---|---|
 | 001 | company-scout | 리서치 도구 / AI 에이전트 | MVP | [보기](./001-company-scout.md) |
-| 002 | Daily Relic (하루 한 점) | iOS · Flutter · 문화유산 | App Store 출시 | [보기](./002-daily-relic.md) |
+| 002 | Daily Relic (하루 한 점) | iOS · Android · Flutter · 문화유산 | iOS · Android 출시 | [보기](./002-daily-relic.md) |
 | 003 | Weather Woof (날씨멍) | iOS · Flutter · 날씨 | 출시 실패 · 개인 사용 | [보기](./003-weather-woof.md) |
 | 004 | Islet | iOS · Swift · 생산성 | App Store 출시 | [보기](./004-islet.md) |
-| 005 | 무럭무럭 (Mureok) | iOS · Android · Flutter · 라이프스타일 | 심사 중 | [보기](./005-mureok.md) |
+| 005 | 무럭무럭 (Mureok) | iOS · Android · Flutter · 라이프스타일 | iOS · Android 출시 | [보기](./005-mureok.md) |
 | 006 | Readable Name | 데스크톱 앱 · Rust · 파일명 복구 | 중단 (구현 전) | [보기](./006-readable-name.md) |
 | 007 | 스튜디오 사이트 | 웹 · 정적 사이트 | 라이브 | [보기](./007-studio-site.md) |
+| 008 | 언제했지 (When'd I) | iOS · Android · Flutter · 기록 | iOS · Android 출시 | [보기](./008-when-did-i.md) |
 | 009 | Adaptive Upskill | AI 에이전트 스킬 · 학습 시스템 | 공개 (v0.3) | [보기](./009-adaptive-upskill.md) |
-
-> 008은 진행 중이라 아직 일지를 열지 않았습니다.
+| 010 | 바로앨범 (BaroAlbum) | iOS · Android · Flutter · 카메라 | iOS · Android 출시 | [보기](./010-baro-album.md) |
 
 ## 공통 제작 방식
 

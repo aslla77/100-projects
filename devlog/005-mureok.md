@@ -5,7 +5,7 @@
 
 - **분야:** iOS · Android · Flutter · 라이프스타일
 - **위험도:** Tier 2 (결제 · 사용자 데이터. 단 서버·계정·PII 없음)
-- **상태:** App Store 심사 중 · Google Play 내부 테스트 배포
+- **상태:** iOS · Android 출시 (v1.0.1 업데이트 — 갤러리 가져오기 추가)
 
 ## 왜 만들었나
 
