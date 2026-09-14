@@ -5,7 +5,7 @@
 
 - **분야:** 웹 · 정적 사이트 · Cloudflare Pages
 - **위험도:** Tier 1 (사용자 입력·계정·데이터 없음)
-- **상태:** 라이브
+- **상태:** 라이브 (앱 6개 · 7개 언어)
 
 ## 왜 만들었나
 
@@ -25,7 +25,8 @@
 
 - **정적 HTML/CSS만.** 프레임워크 없음, 빌드 단계 없음, 의존성 없음.
   `git`에 든 파일이 곧 배포되는 파일이다.
-- **한국어·영어 2개 언어**, `hreflang`으로 상호 연결.
+- **한국어 · 영어 · 일본어 · 중국어 · 프랑스어 · 스페인어 · 이탈리아어 7개 언어**,
+  `hreflang`으로 상호 연결. 앱마다 번역이 있는 언어가 달라, 앱 페이지는 각자 언어의 부분집합만 낸다.
 - **구조화 데이터(JSON-LD)** — Organization / WebSite / MobileApplication / FAQPage.
   검색엔진과 스토어 크롤러가 회사와 앱을 같은 주체로 인식하게 하는 게 목적이다.
 - **법적 문서 호스팅** — 앱별 개인정보처리방침·이용약관을 언어별 고정 URL로 둔다.
@@ -88,8 +89,25 @@
   정적 자산 캐시 헤더를 넣고, 영어 페이지에 남아 있던 한국어 요소(세로 문구·도장·스크린샷)를
   전부 영어판으로 교체했다.
 
+사이트가 여섯 번째 앱까지 늘고 언어도 늘면서 세 번 더 손을 봤다.
+
+- **AEO(답변엔진 최적화, 2026-08-28)** — FAQPage 구조화 데이터(JSON-LD)를 화면에 실제
+  보이는 FAQ 텍스트에서 스크립트로 생성해 글자 단위로 대조 검증했고, FAQ가 화면에 없는
+  페이지에는 아예 넣지 않았다 — 사용자에게 안 보이는 구조화 데이터는 스팸으로 취급될 수
+  있어서다. 앱 페이지 전체의 Organization을 같은 `@id`로 묶어 검색엔진이 "같은 회사"로
+  인식하게 했고, 검색 가시성을 추적할 기준선 문서도 만들었다.
+- **여섯 번째 앱 페이지(쉼호흡, 2026-09-11)** — 스토어에 등록한 지원 URL이 페이지가
+  생기기도 전에 그 주소를 가리키고 있었다. 지원 URL은 실제로 열리는 걸 확인한 뒤에
+  등록해야 한다는 걸 다시 배웠다.
+- **언어 확장(2026-09-13)** — 번역이 있는 앱마다 홈과 앱 페이지를 일본어·중국어·
+  프랑스어·스페인어·이탈리아어로 냈다. 모든 페이지에 지구본 아이콘 언어 메뉴를 달고
+  `hreflang` 링크를 정리했다. "프레임워크 없음"이라는 원칙은 그대로다 — 언어를
+  추가하는 것도 여전히 폴더를 더하는 일일 뿐이다.
+
 ## 참고
 
+- Google Search Central — FAQPage 구조화 데이터: https://developers.google.com/search/docs/appearance/structured-data/faqpage
+- Google Search Central — hreflang: https://developers.google.com/search/docs/specialty/international/localized-versions
 - Cloudflare Pages — 공식 문서: https://developers.cloudflare.com/pages/
 - MDN — CSS scroll snap: https://developer.mozilla.org/docs/Web/CSS/CSS_scroll_snap
 - W3C WAI — Carousel(캐러셀) 패턴: https://www.w3.org/WAI/ARIA/apg/patterns/carousel/

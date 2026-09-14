@@ -5,7 +5,7 @@
 
 - **분야:** iOS · Android · Flutter · 문화유산
 - **위험도:** Tier 2 (결제 / 인앱 구매)
-- **상태:** iOS · Android 출시 (v1.1.x — 콘텐츠 팩·현지화 확장 반영)
+- **상태:** iOS · Android 출시 (v1.2.x — Android 가로 모드 수정 심사 중)
 
 ## 왜 만들었나
 
@@ -48,8 +48,27 @@
 - **App Store 심사는 그 자체가 하나의 릴리즈 파이프라인이다.** 제품 페이지·현지화·
   수출 규정·IAP 메타데이터까지 별도 체크리스트로 관리했다.
 
+## 출시 후
+
+Android 1.2.2(2026-09-07)는 실기기에서 가로 모드로 써 보다가 발견한 버그 두 건을 고쳤다.
+Play 프로덕션 심사에 제출했고, iOS에는 아직 반영하지 않았다.
+
+- **컷아웃 주변 검정 레터박스** — 카메라 펀치홀/노치가 있는 기기를 가로로 돌리면
+  화면 양옆(그리고 세로에서는 위쪽)에 검은 띠가 생겼다. 윈도우를 Android 9+의
+  short-edges 컷아웃 모드로 전환해 해결했다.
+- **가로 패널 하단 잘림** — 가로 모드 패널에 높이 제한을 걸어 두었는데, 그 때문에
+  해설 링크가 아예 안 보이고 공부 버튼은 반쯤 잘려 있었다. 높이 제한을 없애고
+  하단 여백을 더했다.
+
+회귀 테스트를 짜면서 함정에 걸렸다. 가벼운 테스트 하네스로는 재현이 안 됐다 —
+버그는 실제 폰트와 그 기기의 텍스트 배율(text scale factor)이 같이 걸려야만
+나타났다. 그래서 위젯 테스트에 실제 폰트를 로드하고 앱의 전체 부트스트랩 경로를
+그대로 태워, 패널이 스크롤이 필요 없는 상태인지를 단언하게 만들었다.
+교훈: "컷아웃 있는 폰의 가로 모드는 다른 기기다 — 다른 기기로 취급하고 테스트해야 한다."
+
 ## 참고
 
+- Android — Display cutout 지원 문서: https://developer.android.com/develop/ui/views/layout/display-cutout
 - Apple — App Store Review Guidelines: https://developer.apple.com/app-store/review/guidelines/
 - KOGL(공공누리) 공공저작물 라이선스: https://www.kogl.or.kr
 - Creative Commons — CC0: https://creativecommons.org/public-domain/cc0/
